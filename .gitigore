@@ -1,0 +1,21 @@
+# Executáveis Windows
+*.exe
+
+# Executáveis Linux
+*.out
+
+# Arquivos objeto
+*.o
+*.obj
+
+# Debug
+*.pdb
+
+# Configurações locais do VS Code
+.vscode/
+
+# Arquivos temporários
+*.tmp
+
+# Logs
+*.log
