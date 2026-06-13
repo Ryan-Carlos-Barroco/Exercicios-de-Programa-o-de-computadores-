@@ -3,9 +3,29 @@
 
 int main(void)
 {
-    int i, incio, fim;    
+    int i, inicio, fim;    
 
-        for(i=inicio;i!=fim)
+    printf("Digite o o numero de partida: \n");
+    scanf("%d", &inicio);
 
-        return 0;
+    printf("Digite o numero de chegada: \n");
+    scanf("%d", &fim);
+
+    if (fim>0)
+    {
+        
+        printf("listando...\n");
+        
+        for (i = inicio; i <= fim; i++){printf("%d\n", i);}
+    
+    }
+    else
+    {
+
+        printf("Listando..\n");
+
+        for(i=inicio; i >= fim; i--){printf("%d\n", i);}
+
+    }
+
 }
