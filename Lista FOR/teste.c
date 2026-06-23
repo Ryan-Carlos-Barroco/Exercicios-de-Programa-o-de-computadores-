@@ -2,22 +2,34 @@
 #include <stdlib.h>
 #include <time.h>
 
+struct produto
+{
+       char nome[50];
+
+       float preco; 
+};
+
+
 int main(void)
 {
-        int i,  idade[10];
+        SetConsoleOutputCP(65001);
 
-        srand(time(NULL));
+        struct produto p[3];
 
-        for(i=0;i<=10;i++)
+        int i; 
+
+        for (i = 0 ; i < 3 ; i++)
         {
-                idade[i] = rand()%50;
-                printf("%d\n", idade[i]);
+
+                printf("nome: ");
+                fflush(stdin);
+                fgets(p[i].nome, sizeof(p[i].nome), stdin);
+
+                printf("preco: ");
+                scanf("%f", &p[i].preco);
 
         }
+        
 
 
-
-
-
-        return 0;
 }
